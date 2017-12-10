@@ -234,7 +234,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1、数组常用方法</p>
+<p>splice方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1,2,3];</span><br><span class="line">arr.splice(1,1);</span><br><span class="line">console.log(arr);  //[1,3]</span><br></pre></td></tr></table></figure>
+<p>splice的参数有两个，第一个是从哪个下标开始删除，第二个是要删除的元素个数。</p>
+<p>2、数组去重（es6）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1,2,1,3,3,2,2];</span><br><span class="line">arr = Array.from(new Set(arr));</span><br><span class="line">console.log(arr) //[1,2,3]</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1,2,1,3,3,2,2];</span><br><span class="line">arr = [...new Set(arr)];</span><br><span class="line">console.log(arr) // [1,2,3]</span><br></pre></td></tr></table></figure>
       
 
       

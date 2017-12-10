@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="http://wangzehua.com">
   <title>js常用方法整理 | BLOG OF WANGZEHUA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="1、数组常用方法 splice方法 123let arr = [1,2,3];arr.splice(1,1);console.log(arr);  //[1,3] splice的参数有两个，第一个是从哪个下标开始删除，第二个是要删除的元素个数。 2、数组去重（es6）123let arr = [1,2,1,3,3,2,2];arr = Array.from(new Set(arr));consol">
+<meta property="og:type" content="article">
 <meta property="og:title" content="js常用方法整理">
 <meta property="og:url" content="http://wangzehua.com/2017/08/11/JS/index.html">
 <meta property="og:site_name" content="BLOG OF WANGZEHUA">
+<meta property="og:description" content="1、数组常用方法 splice方法 123let arr = [1,2,3];arr.splice(1,1);console.log(arr);  //[1,3] splice的参数有两个，第一个是从哪个下标开始删除，第二个是要删除的元素个数。 2、数组去重（es6）123let arr = [1,2,1,3,3,2,2];arr = Array.from(new Set(arr));consol">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-09T09:06:14.517Z">
+<meta property="og:updated_time" content="2017-12-10T12:05:37.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js常用方法整理">
+<meta name="twitter:description" content="1、数组常用方法 splice方法 123let arr = [1,2,3];arr.splice(1,1);console.log(arr);  //[1,3] splice的参数有两个，第一个是从哪个下标开始删除，第二个是要删除的元素个数。 2、数组去重（es6）123let arr = [1,2,1,3,3,2,2];arr = Array.from(new Set(arr));consol">
   
     <link rel="alternative" href="/atom.xml" title="BLOG OF WANGZEHUA" type="application/atom+xml">
   
@@ -165,7 +168,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1、数组常用方法</p>
+<p>splice方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1,2,3];</span><br><span class="line">arr.splice(1,1);</span><br><span class="line">console.log(arr);  //[1,3]</span><br></pre></td></tr></table></figure>
+<p>splice的参数有两个，第一个是从哪个下标开始删除，第二个是要删除的元素个数。</p>
+<p>2、数组去重（es6）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1,2,1,3,3,2,2];</span><br><span class="line">arr = Array.from(new Set(arr));</span><br><span class="line">console.log(arr) //[1,2,3]</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1,2,1,3,3,2,2];</span><br><span class="line">arr = [...new Set(arr)];</span><br><span class="line">console.log(arr) // [1,2,3]</span><br></pre></td></tr></table></figure>
       
 
       
